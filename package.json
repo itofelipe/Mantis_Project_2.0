@@ -5,8 +5,5 @@
   "main": "index.js",
   "repository": "https://github.com/itofelipe/Mantis_Project_2.0",
   "author": "itofelipe <felipeito96@gmail.com>",
-  "license": "MIT",
-  "dependencies": {
-    "index.php": "^1.0.0"
-  }
+  "license": "MIT"
 }
