@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"/>
+        <link rel="stylesheet" href="assets/css/main.css">
+        
+
+        <!-- JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="js/scripts.js"></script>
+
+        <meta charset="UTF-8">	  
+        <meta name="description" content="Mantis Project - Web design, graphic design, digital design">
+        <meta name="keywords" content="homepage,design,graphic design,digital design,web design">
+        <meta name="author" content="Mantis Project">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+
+        <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+
+        <title>Mantis Project - Design and Concept</title>
+
+        <!-- <?php wp_head(); ?> -->
+    </head>
+    <body>
+        <header class="header">
+            <div class="header_flex_icon">
+                <a class="header_icon" href="/">
+                    <img src="assets/images/icon.png" />
+                </a>
+            </div>
+            <div class="header_flex_button">
+                <button class="header__button" id="btnNav" type="button">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="header_flex_sns">
+                <div class="grid_4">
+                    <a class="header_sns_icon" href="https://www.facebook.com/MantisProjectTecnology/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                </div>
+                <div class="grid_4">
+                    <a class="header_sns_icon" href="https://api.whatsapp.com/send?phone=8108099952590&text=I%27m%20contacting%20from%20Mantis%20Project">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="grid_4">
+                    <a class="header_sns_icon" href="tel:+8108099952590">
+                        <i class="fas fa-phone-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <nav class="nav">
+            <div class="nav__links">
+                <div class="nav__links_block">
+                <a href="#" class="nav__link">
+                    <i class="fas fa-border-style"></i>
+                    HOME
+                </a>
+                <a class="nav__link nav__link" href="#">
+                    <i class="fas fa-fire"></i>
+                    SERVICES
+                </a>
+                <a class="nav__link" href="#">
+                    <i class="fab fa-buffer"></i>
+                    PORTFOLIO
+                </a>
+                <a class="nav__link" href="#">
+                    <i class="far fa-compass"></i>
+                    CONTACT
+                </a>
+                </div>
+            </div>
+            <div class="nav__overlay"></div>
+        </nav>
+
+        <div class="main">
+            <section id="home">
+                <div class="flex_center_center header_logo">
+                    <img src="assets/images/logo.png" />
+                </div>
+            </section>
+
+            <section id="services">
+
+            </section>
+        </div>
+
+
+
+        <script>
+            window.addEventListener("load", () => {
+                document.body.classList.remove("preload");
+            });
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const nav = document.querySelector(".nav");
+
+                document.querySelector("#btnNav").addEventListener("click", () => {
+                    nav.classList.add("nav--open");
+                });
+
+                document.querySelector(".nav__overlay").addEventListener("click", () => {
+                    nav.classList.remove("nav--open");
+                });
+            });
+        </script>
+    </body>
+</html>
